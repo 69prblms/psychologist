@@ -14,79 +14,71 @@
 
 <body>
     <div class="wrapper">
-
         <header class="header">
             <div class="header__container container">
-                <div class="header__burger">
+                <button class="header__burger">
                     <span></span>
-                </div>
+                </button>
                 <div class="header__logo-backup">
                     <a href="#"><img src="./images/header/logo-backup.svg"
-                        alt="">
+                        alt="логотип">
                 </a>
                 </div>
-
                 <nav class="header__menu menu">
                     <ul class="menu__list">
                         <li class="menu__item">
-                            <a class="menu__link" href="#">Кто я?</a>
+                            <a class="menu__link" href="#" aria-label="перейти в раздел Кто я?">Кто я?</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="#">Услуги</a>
+                            <a class="menu__link" href="#" aria-label="перейти в раздел Услуги">Услуги</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link header__logo" href="#"><img src="./images/header/header-logo.svg"
-                                    alt="">
-                            </a>
+                            <img class="menu__link header__logo" src="./images/header/header-logo.svg" alt="логотип">
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="#">Форматы</a>
+                            <a class="menu__link" href="#" aria-label="перейти в раздел Форматы">Форматы</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="#">Связаться</a>
+                            <a class="menu__link" href="#" aria-label="перейти в раздел Связаться">Связаться</a>
                         </li>
-                    </ul>
-
-                   
-
-                    
+                    </ul>                   
                 </nav>
-                
             </div>
-
         </header>
 
         <section class="hero">
             <div class="container hero__container">
                 <div class="hero__content">
-                    <img class="hero__content-image" src="images/hero/hero-img.png" alt="">
-                    <div class="hero__profession">Карьерный психолог</div>
-                    <div class="hero__name">Наталья</div>
-                    <div class="hero__surname">Захарова</div>
+                    <h1 class="visually-hidden__title">Карьерный психолог</h1>
+                    <img class="hero__content-image" src="./images/hero/hero-img.png" alt="фото Аделины Сахаровой" aria-hidden="true">
+                    <h2 class="hero__profession">Карьерный психолог</h2>
+                    <strong class="hero__name">Аделина</strong>
+                    <strong class="hero__surname">Сахарова</strong>
                     <div class="hero__slogan">Помогу преодолеть внутренние барьеры и реализовать себя</div>
-                    <!-- <div class="hero__icon-round"></div> -->
+                    <a class="hero__link" href="#who">
+                        <img src="./images/hero/hero_arrow.svg" alt="стрелка-переход к разделу кто я">
+                    </a>
                 </div>
             </div>
         </section>
 
         <section class="offer-link">
-            <div class="offer__container offer-link__container">
+            <div class="offer offer-link__container">
+                <h2 class="visually-hidden__title">заполните анкету и получите скидку 50%</h2>
                 <p class="offer-link__info">Пожалуйста, ответьте на несколько вопросов, чтобы определить, на каком этапе вы
                     находитесь сейчас. Я пойму, чем смогу вам помочь, и подарю скидку 50% на консультацию!</p>
-                <a class="offer-link__link" href="#"> Ответить на вопросы</a>
+                <a class="offer-link__link" href="#" aria-label="перейти к заполнению анкеты"> Ответить на вопросы</a>
             </div>
         </section>
 
-        <section class="who">
+        <section class="who" id="who">
             <div class="container who__container">
-
                 <div class="who__image">
-                    <img src="./images/who/who-img.png" alt="#">
+                    <img src="./images/who/who-img.png" alt="фото Аделины Сахаровой" aria-hidden="true">
                 </div>
-
                 <div class="who__body">
-                    <h3 class="title who__title" id="link-1">Кто я?</h3>
-                    <p class="who__text">Здравствуйте. Я, Наталья Захарова, психолог, карьерный консультант
+                    <h2 class="title who__title" id="link-1">Кто я?</h2>
+                    <p class="who__text">Здравствуйте. Я, Аделина Сахарова, психолог, карьерный консультант
                         и профориентатор.</p>
                     <p class="who__info">Не так давно я успешно работала в сфере финансов в крупной нефтегазовой
                         компании. Стабильно, спокойно, с желаемым доходом. Но мечтала совсем о другом. Год назад
@@ -99,7 +91,7 @@
 
         <section class="services">
             <div class="container">
-                <h3 class="title services__title" id="link-2">Кому подойдут мои услуги?</h3>
+                <h2 class="title services__title" id="link-2">Кому подойдут мои услуги?</h2>
                 <ul class="services__list">
                     <li class="services__item">
                         <div class="basic-card basic-card--bg-1">
@@ -128,9 +120,9 @@
 
         <section class="format">
             <div class="container">
-                <h3 class="title format__title" id="link-3">
-                    Какие форматы <p class="title low-title">я могу предложить?</p>
-                </h3>
+                <h2 class="title format__title" id="link-3">
+                    Какие форматы <span class="title low-title">я могу предложить?</span>
+                </h2>
                 <ul class="format__list">
                     <li class="format__item item-format">
                         <div class="item-format__number">1</div>
@@ -183,42 +175,43 @@
         </section>
 
         <section class="offer-button">
-            <div class="offer__container offer-button__container">
+            <div class="offer offer-button__container">
+                <h2 class="visually-hidden__title">заполните анкету и получите скидку 50%</h2>
                 <div class="container offer-button__wrapper">
                     <p class="offer-button__info">
                         Получите <span class="offer-button__info--color">скидку 50%</span> на консультации прямо сейчас
                     </p>
-                    <div class="offer-button__btn">
-                        <a class="offer-button__link" href="#"> Получить консультацию</a>
-                    </div>
+                        <a class="offer-button__btn" href="#" aria-label="перейти к заполнению анкеты">
+                            Получить <br> консультацию
+                        </a>
                 </div>
             </div>
         </section>
 
         <section class="advantages">
             <div class="container">
-                <h3 class="title advantages__title">Почему вы можете
-                    <p class="title low-title">ко мне обращаться?</p>
-                </h3>
+                <h2 class="title advantages__title">Почему вы можете
+                    <span class="title low-title">ко мне обращаться?</span>
+                </h2>
 
                 <ul class="advantages__list">
                     <li class="advantages__item">
-                        <div class="column-card basic-card--icon-1">
+                        <div class="column-card card--icon-private">
                             <p class="column-card__text">Гарантирую 100% приватность</p>
                         </div>
                     </li>
                     <li class="advantages__item">
-                        <div class="column-card basic-card--icon-2">
+                        <div class="column-card card--icon-human">
                             <p class="column-card__text">Работаю со взрослыми, студентами и школьниками</p>
                         </div>
                     </li>
                     <li class="advantages__item">
-                        <div class="column-card basic-card--icon-3">
+                        <div class="column-card card--icon-conversation">
                             <p class="column-card__text">Провожу срочные консультации в течение 3 дней</p>
                         </div>
                     </li>
                     <li class="advantages__item">
-                        <div class="column-card basic-card--icon-4">
+                        <div class="column-card card--icon-headphones">
                             <p class="column-card__text">Работаю онлайн по Skype</p>
                         </div>
                     </li>
@@ -228,8 +221,9 @@
 
         <section class="personal">
             <div class="container personal__container">
+                <h2 class="visually-hidden__title">детали работы</h2>
                 <div class="personal__img">
-                    <img src="images/advantages/advantage-img.png" alt="">
+                    <img src="images/advantages/advantage-img.png" alt="фото Аделины Сахаровой" aria-hidden="true">
                 </div>
                 <div class="personal__body">
                     <p class="personal__title">
@@ -247,9 +241,9 @@
         <section class="profile">
             <div class="container">
                 <div class="profile__head">
-                    <h3 class="title profile__title" id="link-4">
-                        Подберем удобный <p class="title low-title">формат общения</p>
-                    </h3>
+                    <h2 class="title profile__title" id="link-4">
+                        Подберем удобный <span class="title low-title">формат общения</span>
+                    </h2>
                     <div class="profile__info">
                         <p class="profile__info-text">Остались вопросы или нужна помощь, чтобы определиться с форматом
                             работы?</p>
@@ -286,9 +280,8 @@
                         </li>
                     </ul>
                     <div class="profile__action">
-                        <button class="profile__btn">Отправить</button>
-                        <p class="profile__agreement">Нажимая «Отправить», вы соглашаетесь с <a class="profile__agreement-link"
-                                href="#">политикой конфиденциальности сайта.</a>
+                        <button class="profile__btn" aria-label="Отправить форму">Отправить</button>
+                        <p class="profile__agreement">Нажимая «Отправить», вы соглашаетесь с <a class="profile__agreement-link" href="#" aria-label="ознакомиться с политикой конфиденциальности сайта">политикой конфиденциальности сайта.</a>
                         </p>
                     </div>
                 </div>
@@ -297,7 +290,7 @@
 
         <footer class="footer">
             <div class="container footer__container">
-                <div class="copyright">© 2021 Наталья Захарова</div>
+                <p class="copyright">© 2021 Аделина Захарова</p>
                 <div class="socials">
                     <a class="socials__item socials__item--instagram" href="#" aria-label="мы в инстаграм"></a>
                     <a class="socials__item socials__item--facebook" href="#" aria-label="мы на фейсбук"></a>
