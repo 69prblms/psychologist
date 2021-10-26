@@ -32,6 +32,17 @@ body {
     height: 1px;
     margin: -1px;
     clip: rect(0 0 0 0);
+
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
 /* -----------------------header----------------------- */
@@ -236,7 +247,7 @@ body {
     color: #D59B78;
     transition: 1s;
 }
-
+.offer-link__link:hover
 .offer-link__link::after {
     content: '';
     position: absolute;
@@ -520,10 +531,11 @@ body {
     line-height: 26px;
     border-radius: 50%;
     border: none;
-    transition: 1s ease;
+    
 }
 
-.button:hover {
+.offer-button__btn:hover,
+.profile__btn:hover {
     box-shadow: 0 14px 28px rgba(213, 155, 120, .2), 0 10px 10px rgba(41, 41, 41, 0.22);
 }
 
@@ -771,7 +783,7 @@ body {
     line-height: 30px;
     background: #D59B78;
     color: #fff;
-    transition: 1s ease;
+    cursor: pointer;
 }
 
 .profile__agreement {
